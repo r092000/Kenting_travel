@@ -11,34 +11,79 @@
     <title>墾丁旅遊筆記</title>
 
     <style>
-        .ui-body-c, .ui-header {
+        
+        @media screen and (min-width: 640px) and (max-width: 1960px){
+        body{
+            font-size: 1.5em;
+            
+            }
+        }
+        
+        @media screen and (max-width: 640px) {
+        
+        body{
+            font-size: 1em;
+            }
+
+        }
+
+        .ui-body-c, .ui-content, .ui-header {
         font-family: 'Noto Serif TC', serif;}
         .ui-footer {
         font-family: 'Noto Serif TC', serif;}
+        
 
-</style>
+        .video-wrapper{
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0; 
+            width: 100%;
+            height: 100%;
+        }
+
+        .Pic{
+            background-image: url(image/5-12.jpg);
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-size: fill;
+            background-position: center;
+            filter: grayscale(0.5);
+        }
+
+    </style>
 </head>
-<body>
-    
+<body >
+<div id="content">
+
     <!-- 第一分頁 -->
         <div data-role="page" id="home">
-            <div data-role="panel" id="myPanel0"> 
-                <h2>選單選項</h2>
-                <p><a href="#page01" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">地理環境</a>
-                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a>
-                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a>
-                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
-                <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
-            </div> 
-    
+        
         <div data-role="header">
             <h1>墾丁旅遊筆記</h1>
         </div><!-- /header -->
-    
+
+        
         <div role="main" class="ui-content">
-        <a href="#myPanel0" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
-        <h1>接近暑假尾聲，不想就這麼無聊的結束最後幾天，於是和幾個朋友計畫到墾丁遊玩，在過程中寫完了這份筆記。</h1>
+        
+        <img src="https://pix10.agoda.net/geo/city/18343/1_18343_02.jpg?s=1920x822">
+
+        <p>接近暑假尾聲，不想就這麼無聊的結束最後幾天，於是和幾個朋友計畫到墾丁遊玩，在過程中寫完了這份筆記。</p>
     
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a></li>
+            <li><a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a></li>
+            <li><a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a></li>
+            <li><a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></li>
+            <li><a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></li>
+            <li><a href="#aboutus" data-role="button" class="ui-btn ui-icon-search ui-btn-icon-left">關於我們</a></li>
+        </div> 
+
         </div><!-- /content -->
         
     
@@ -50,6 +95,7 @@
 
     <!-- 第一分頁 -->
         <div data-role="page" id="page01">
+            
             <div data-role="panel" id="myPanel1"> 
                 <h2>選單選項</h2>
                 <p><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
@@ -58,13 +104,15 @@
                 <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
                 <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
             </div> 
-
+        
         <div data-role="header">
-            <h1>地理環境</h1>
+              <h1>地理環境</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-        <a href="#myPanel1" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
+              <a href="#myPanel1" class="ui-btn      ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
+
+              <div class="Pic">
               <h1>墾丁地理位置</h1>
               <p>墾丁於台灣本島最南端的恆春半島，三面環海，東面太平洋，西鄰台灣海峽，南瀕巴士海峽。陸地範圍西邊包括龜山向南至紅柴之台地崖與海濱地帶，南部包括龍鑾潭南面之貓鼻頭、南灣、墾丁國家森林遊樂區、鵝鑾鼻、東沿太平洋岸經佳樂水，北至南仁山區。海域範圍包括南灣海域及龜山經貓鼻頭、鵝鑾鼻北至南仁灣間，距海岸一公里內的海域。
               墾丁國家公園地理上屬於熱帶性氣候區，終年氣溫和暖，熱帶植物衍生，四周海域清澈，珊瑚生長繁盛。</p>
@@ -77,7 +125,7 @@
                   在恆春半島曾見的鯨豚類有大翅鯨、抹香鯨、吉氏海豚及黑身瓶鼻海豚。每年12月至翌年3月，在恆春西海岸之海口附近可見鯨類，而冬季時恆春半島各處沿海均可看到成群海豚。</p>
               <p>四、             候鳥：
                   由於墾丁位於台灣本島最南端，過境此區的候鳥種類眾多，其中最著名的有秋冬之際南下避寒的伯勞與灰面鷲，灰面鷲到達墾丁的時間常於十月十日前後，故又稱「國慶鳥」。 此外，墾丁北區的龍鑾潭也是境內水鳥聚集的地點，包括雁鴨與鷸鴴科鳥類均可發現。國家公園在此處設立龍鑾潭自然中心，擁有賞鳥的專業設施。</p>
-      
+                </div>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -103,10 +151,43 @@
 
         <div role="main" class="ui-content">
         <a href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
-        <p>內文</p>
+
+        <h1>墾丁景點一覽</h1>
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/39" ><img src="https://images.chinatimes.com/newsphoto/2019-04-09/900/20190409001596.jpg"><h2>國立海洋生物博物館</h2><p>國立海洋生物博物館(海生館)位於後灣，是全台灣規模最大的，館內魚類種類豐富，分成台灣水域館、珊瑚王國館、世界水域館，包含三層樓高的水族箱、海底隧道，或是可愛的企鵝、悠游自在的小白鯨與鯊魚，都讓人猶如親臨海底世界般，非常值得一遊，不僅適合家庭團體，就連大人們也能在這裡玩得十分盡興喔！</p></a></li>
+        </div> 
         
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/14" ><img src="https://img.ltn.com.tw/Upload/liveNews/BigPic/600_phpWdAuBA.jpg"><h2>墾丁大街</h2><p>來到了墾丁，除了在白天享受風光明媚的美麗海景，到了晚上，則一定要到著名的墾丁大街好好逛逛不可！墾丁大街白天是台26線的主要道路，晚上就被攤販和行人盤據，彷彿不夜城一般。其實整個墾丁方圓不過一公里以內，也是個剛剛好都可以步行繞個一圈的範圍。</p></a></li>
+        </div> 
         
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/16" ><img src="https://img.uukt.com.tw/view/16/720/20161120001205Ef64H.jpg"><h2>墾丁牧場</h2><p>墾丁牧場位於大尖山下的草原，與販賣牛肉乾的畜場試驗所合作社不同，簡單的說就是實際放牧牛隻的草原，也是玩牛的的好地方。幸運的話，還可以看到這邊的幾匹野馬喔！</p></a></li>
+        </div> 
+
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/4" ><img src="https://img.uukt.com.tw/view/4/720/201611092225213f7pB.jpg"><h2>鵝鑾鼻燈塔</h2><p>鵝鑾鼻燈塔是台灣最南端的燈塔，也是照射距離最遠的燈塔，週邊就是鵝鑾鼻公園，白天可以到鵝鸞鼻公園走走，晚上也可以來看燈塔。其實以前還是學生的時候，最喜歡晚上到鵝鸞鼻公園夜遊了，既沒有烈日逼人，又可以觀賞晚上燈塔光束的風采，月光下的步道尤其美麗，更重要的是......不收門票！當然白天的鵝鸞鼻公園也有它美麗的一面，園內有多種熱帶濱海植物以及珊瑚礁地形，濱海步道也不錯。只是還是推薦夜遊鵝鸞鼻，不過在沒有月光的夜裡，記得要帶手電筒哦！</p></a></li>
+        </div> 
         
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/41" ><img src="https://img.uukt.com.tw/view/41/720/20191017115753dar4w.jpg"><h2>龍磐公園</h2><p>龍磐公園是墾丁東海岸的景點，由於地層隆起，部分珊瑚礁岩層崩落，而型成居高臨下的崩崖地形，面對遼闊的太平洋，很多人喜歡到這兒來拍照。天氣好時，還可以看到蘭嶼呢。龍磐公園也是著名的觀星點，因為光害少，周圍沒啥遮蔽物，大多對星象有興趣的人都喜歡晚上跑到這兒來。此外，由於是台灣本島日出最早的地方，所以每年跨年的時候，都會有許多人來這裡迎接新年曙光。</p></a></li>
+        </div> 
+
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/12" ><img src="https://img.uukt.com.tw/view/12/720/20161109231123JV3Aj.jpg"><h2>小灣沙灘</h2><p>小灣位在凱撒飯店前，是個頗受歡迎的海灘，充滿異國風情，算是離墾丁街上最近的沙灘之一，住宿於墾丁街上的人走路就可以到達。以前很髒亂，不過現在由凱撒飯店管理後，變得比較乾淨了，水上摩托車不少，不過有浮桶隔開，泳客可以在安全區域內戲水。階梯下還設了一間海灘的露天PUB，是晚上一個不錯的去處。</p></a></li>
+        </div> 
+
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/20" ><img src="https://img.uukt.com.tw/view/20/720/20161119094722BJgqO.jpg"><h2>南灣沙灘</h2><p>南灣是墾丁最受歡迎的遊憩沙灘之一，這裡的沙子比較細，沙灘較長且坡度平緩，相當適合玩水，這裡提供了各式各樣的水上活動，包含衝浪、帆船、香蕉船、水上摩托車……等設施，既刺激又好玩，海灘上許多陽光的衝浪男孩和比基尼女孩也是南灣的一大風景，無論四季，你永遠都能在這裡找到屬於南國的熱情和活力。</p></a></li>
+        </div> 
+
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/9" ><img src="https://img.uukt.com.tw/view/9/720/20161109225234wvmu4.jpg"><h2>帆船石</h2><p>船帆石是墾丁知名的地標景點之一，許多遊客來到墾丁都不免要與它合照留念一番，它是由附近台地所滾落的珊瑚礁，高約18公尺，非常巨大，狀似一艘即將揚起的帆船，故以此命名。</p></a></li>
+        </div> 
+
+        <div data-role="listview" data-inset="true"> 
+            <li><a href="https://uukt.com.tw/attraction/79" ><img src="https://img.uukt.com.tw/view/79/720/2016112714222103Xps.jpg"><h2>恆春夜市</h2><p>只有每個星期天晚上才有營業的恆春夜市，恆春人稱之為台語「商展」，是當地居民每個星期最期待的時候，你會發現週日晚上很多店都沒開，因為大家都來這邊逛夜市了。和墾丁大街的商業氣息不同，這裡多半是親民的小吃和簡單的兒童遊戲攤位，假如您週日晚上還在恆春，千萬不要錯過喔！</p></a></li>
+        </div> 
 
         </div><!-- /content -->
 
@@ -134,6 +215,10 @@
         <div role="main" class="ui-content">
         <a href="#myPanel3" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
         <p>內文</p>
+
+        <div class="video-wrapper">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/P2fxmAjTE2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
 
         
@@ -179,28 +264,19 @@
 
      <!-- 第五分頁 -->
      <div data-role="page" id="page05">
-        <div data-role="panel" id="myPane5"> 
-            <h2>選單選項</h2>
-            <p><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
-            <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a>
-            <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a>
-            <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a>
-            <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></p>
-        </div> 
-
         <div data-role="header">
+        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
             <h1>旅行相簿</h1>
         </div><!-- /header -->
     
         <div role="main" class="ui-content">
-        <a href="#myPanel5" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
         <p>內文</p>
     
     
     
     
 
-       </div><!-- /content -->
+        </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
         <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
@@ -214,7 +290,7 @@
             <h1>關於我們</h1>
         </div><!-- /header -->
         <div role="main" class="ui-content">
-        <p>終於趁著開學前夕跑到墾丁玩了，為了玩得盡興我們做了以上這些筆記</p>
+        <p>終於趁著開學前夕跑到墾丁玩了，我們出發前做了一些功課，並完成了這些筆記。</p>
 
         <div data-role="footer" data-position="fixed">
         <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>

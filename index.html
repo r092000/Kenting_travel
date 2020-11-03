@@ -71,7 +71,7 @@
         
         <div role="main" class="ui-content">
         
-        <img src="https://pix10.agoda.net/geo/city/18343/1_18343_02.jpg?s=1920x822">
+        <img src="https://pix10.agoda.net/geo/city/18343/1_18343_02.jpg?s=1920x822" width="100%">
 
         <p>接近暑假尾聲，不想就這麼無聊的結束最後幾天，於是和幾個朋友計畫到墾丁遊玩，在過程中寫完了這份筆記。</p>
     
@@ -80,7 +80,6 @@
             <li><a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a></li>
             <li><a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a></li>
             <li><a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></li>
-            <li><a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></li>
             <li><a href="#aboutus" data-role="button" class="ui-btn ui-icon-search ui-btn-icon-left">關於我們</a></li>
         </div> 
 
@@ -95,22 +94,12 @@
 
     <!-- 第一分頁 -->
         <div data-role="page" id="page01">
-            
-            <div data-role="panel" id="myPanel1"> 
-                <h2>選單選項</h2>
-                <p><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
-                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a>
-                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a>
-                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
-                <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
-            </div> 
-        
+                   
         <div data-role="header">
               <h1>地理環境</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-              <a href="#myPanel1" class="ui-btn      ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
 
               <div class="Pic">
               <h1>墾丁地理位置</h1>
@@ -129,28 +118,26 @@
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
+                <li><a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a></li>
+                <li><a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a></li>
+                <li><a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
 
     </div><!-- /page -->
 
      <!-- 第二分頁 -->
      <div data-role="page" id="page02">
-        <div data-role="panel" id="myPanel2"> 
-                <h2>選單選項</h2>
-                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
-                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a>
-                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a>
-                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
-                <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
-            </div> 
 
         <div data-role="header">
             <h1>旅遊景點</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-        <a href="#myPanel2" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
 
         <h1>墾丁景點一覽</h1>
         <div data-role="listview" data-inset="true"> 
@@ -192,62 +179,122 @@
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
+            <div data-role="navbar">
+                <ul>
+                <li><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a></li>
+                <li><a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a></li>
+                <li><a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a></li>
+                <li><a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></li>
+                </ul>
+            </div>
         </div><!-- /footer -->
 
     </div><!-- /page -->
 
     <!-- 第三分頁 -->
     <div data-role="page" id="page03">
-        <div data-role="panel" id="myPanel3"> 
-                <h2>選單選項</h2>
-                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
-                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a>
-                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a>
-                <a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a>
-                <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
-            </div> 
 
         <div data-role="header">
             <h1>當地美食</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-        <a href="#myPanel3" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
-        <p>內文</p>
+        <h2>墾丁恆春才吃得到的美食</h2>
+        <p>在介紹開始之前，我們先看看以下這部影片，大概了解一下~</p>
+        <p>其中有幾個店家我們也實際走訪過了，真的就像影片介紹的那樣。</p>
 
         <div class="video-wrapper">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/P2fxmAjTE2M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-
+        <div data-role="main" class="ui-content">
+            <div data-role="collapsibleset">
+              <div data-role="collapsible">
+                <h3>在地小吃/台菜</h3>
+                <h4>山下人家</h4>
+                <img src="https://i0.wp.com/boo2k.com/wp-content/uploads/2020/07/3C1A1809.jpg?resize=860%2C573&ssl=1" width="100%">
+                <p>電話：+886981944133</p>
+                <p>營業時間：:11:00–14:00、17:00–21:00</p>
+                <p>地址：946屏東縣恆春鎮山腳路64之1號</p>
+                <h4>龍磐餐飲</h4>
+                <img src="https://i2.wp.com/boo2k.com/wp-content/uploads/2020/08/20200706-3C1A6514.jpg?resize=860%2C573&ssl=1" width="100%">
+                <p>電話：+88688851511</p>
+                <p>營業時間：11:00–20:00 星期三休息</p>
+                <p>地址：946屏東縣恆春鎮坑內路13號</p>
+                <h4>夥計鴨肉冬粉</h4>
+                <img src="https://i1.wp.com/boo2k.com/wp-content/uploads/2016/08/20160807-IMG_6702.jpg?resize=800%2C484&ssl=1" width="100%">
+                <p>地址：946台灣屏東縣恆春鎮中山路35號</p>
+                <p>營業時間：17:30-00:00</p>
+                <h4>小杜包子</h4>
+                <img src="" width="100%">
+                <p>電話：+88688892600</p>
+                <p>營業時間：08:00–20:00</p>
+                <p>地址：946台灣屏東縣恆春鎮恆南路29-2號</p>
+                <h4></h4>
+                <img src="" width="100%">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div data-role="collapsible">
+                <h3>冰品飲料</h3>
+                <h4></h4>
+                <img src="" width="100%">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div data-role="collapsible">
+                <h3>海鮮餐廳</h3>
+                <h4></h4>
+                <img src="" width="100%">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div data-role="collapsible">
+                <h3>東南亞風味餐廳</h3>
+                <h4></h4>
+                <img src="" width="100%">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+              <div data-role="collapsible">
+                <h3>美式義式餐廳</h3>
+                <h4></h4>
+                <img src="" width="100%">
+                <p></p>
+                <p></p>
+                <p></p>
+              </div>
+            </div>
+          </div>
         
 
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
+        <div data-role="navbar">
+            <ul>
+            <li><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a></li>
+            <li><a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a></li>
+            <li><a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a></li>
+            <li><a href="#page04" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">交通資訊</a></li>
+            </ul>
+        </div>
         </div><!-- /footer -->
 
     </div><!-- /page -->
 
      <!-- 第四分頁 -->
      <div data-role="page" id="page04">
-        <div data-role="panel" id="myPanel4"> 
-                <h2>選單選項</h2>
-                <a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a>
-                <a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a>
-                <a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a>
-                <a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a>
-                <a href="#page05" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅行相簿</a></p>
-            </div> 
 
         <div data-role="header">
             <h1>交通資訊</h1>
         </div><!-- /header -->
 
         <div role="main" class="ui-content">
-        <a href="#myPanel4" class="ui-btn ui-btn-inline ui-corner-all ui-shadow">選單列表</a>
         <p>內文</p>
 
 
@@ -257,32 +304,20 @@
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
+        <div data-role="navbar">
+           <ul>
+           <li><a href="#home" data-role="button" class="ui-btn ui-icon-home ui-btn-icon-left">首頁</a></li>
+           <li><a href="#page01" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">地理環境</a></li>
+           <li><a href="#page02" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">旅遊景點</a></li>
+           <li><a href="#page03" data-role="button" class="ui-btn ui-icon-arrow-r ui-btn-icon-left">當地美食</a></li>
+           </ul>
+        </div>
         </div><!-- /footer -->
 
     </div><!-- /page -->
-
-     <!-- 第五分頁 -->
-     <div data-role="page" id="page05">
-        <div data-role="header">
-        <a href="#home" class="ui-btn ui-icon-home ui-btn-icon-notext ui-btn-corner-all">home</a>
-            <h1>旅行相簿</h1>
-        </div><!-- /header -->
-    
-        <div role="main" class="ui-content">
-        <p>內文</p>
-    
-    
     
     
 
-        </div><!-- /content -->
-
-        <div data-role="footer" data-position="fixed">
-        <h4>Copyright &copy; 2020 @Wenzao DCAM</h4>
-        </div><!-- /footer -->
-
-    </div><!-- /page -->
 
     <!-- 關於我們 -->
      <div data-dialog="true" id="aboutus">
